@@ -7,8 +7,10 @@ PC'den uzaklaşcağınızda bunu açıp gidebilirsiniz (tabi eğer arkadaşını
 
 
 
-![image](https://github.com/user-attachments/assets/0552aea8-5c0b-4dd1-bf03-7005a5d92f8d)
-![image](https://github.com/user-attachments/assets/eb946db8-2b73-43de-acd9-c8efdd77449d)
+![image](https://github.com/user-attachments/assets/f18c2872-6e7d-4227-a3bf-2504addcb048)
+![image](https://github.com/user-attachments/assets/9e21548d-e0db-4a75-8754-05b98877b558)
+
+
 
 
 Fotoğraftaki yazılar değişiyor.
