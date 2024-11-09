@@ -1,38 +1,38 @@
 import tkinter as tk
 import random
 
-# Rastgele karakterler için kullanılacak karakter seti
+
 char_set = (
-    ' .:;+=*%@#'  # Semboller
-    'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'  # Harfler ve sayılar
-    '가나다라마바사아자차카타파하'  # Korece karakterler
-    '你好世界'  # Çince karakterler
+    ' .:;+=*%@#'  
+    'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'  
+    '가나다라마바사아자차카타파하'  
+    '你好世界' 
 )
 
 class MatrixApp:
     def __init__(self, root):
         self.root = root
-        self.root.attributes('-fullscreen', True)  # Tam ekran
-        self.root.configure(bg='black')  # Arka plan rengi
+        self.root.attributes('-fullscreen', True)  
+        self.root.configure(bg='black')  
         self.canvas = tk.Canvas(root, bg='black', highlightthickness=0)
         self.canvas.pack(fill=tk.BOTH, expand=True)
 
         self.cols, self.rows = self.root.winfo_screenwidth(), self.root.winfo_screenheight()
-        self.char_height = 20  # Karakter yüksekliği
+        self.char_height = 20  
         self.create_effect()
 
-        # ESC tuşuna basıldığında çıkışı sağlayan fonksiyon
+    
         self.root.bind('<Escape>', self.quit_app)
 
     def create_effect(self):
         self.update_effect()
 
     def update_effect(self):
-        self.canvas.delete("all")  # Önceki çizimleri temizle
+        self.canvas.delete("all")  
 
-        # Ekranın tamamını kapsayan rastgele karakterler
-        for y in range(0, self.rows, self.char_height):  # Karakter yüksekliği kadar aralıkla yerleştir
-            line = ''.join(random.choice(char_set) for _ in range(self.cols // 10))  # Ekranın genişliği kadar karakter
+
+        for y in range(0, self.rows, self.char_height):  
+            line = ''.join(random.choice(char_set) for _ in range(self.cols // 10))  
             self.canvas.create_text(
                 0, y,
                 text=line,
@@ -41,7 +41,7 @@ class MatrixApp:
                 anchor="nw"
             )
 
-        self.root.after(30, self.update_effect)  # 30 ms sonra tekrar güncelle
+        self.root.after(30, self.update_effect)  
 
     def quit_app(self, event):
         self.root.destroy()  # Uygulamayı kapat
