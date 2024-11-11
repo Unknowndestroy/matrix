@@ -17,3 +17,5 @@ Fotoğraftaki yazılar değişiyor.
 
 Harfleri koddan değiştirebilirsiniz, önerim çince,korece,arapça harfler ekleme
 SCR Versiyonda, .scr dosyasına sağ tıklayıp yapılandır deyin, artık 20 dk ekrana ellemeyince karşınıza o matrix ekranı çıkcak.
+
+# TERMUX DESTEKLİ DEĞİL
